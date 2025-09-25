@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Baguette Cult Signup</title>
 </head>
 <body>
     <div>
     <h1>Welcome to the Baguette Cult!</h1>
+    <img src="french venti.webp" width="80%">
     <p>An underground network of baguette lovers teaming up to take down our archenemies, the Croissant Network. We host events weekly to share our love for baguettes, network, and support each other :D</p>
     <p>Does this sound interesting to you? Great! </p>
     <h5>But first, we need to make sure you're not one of those <em>croissant lovers</em> in disguise...</h5>
-    <p>If you're on board, fill out this short quiz! If you qualify, you'll receieve an email shortly to join our ranks.</p>
+    <p>If you're on board, fill out this short survey! If you qualify, you'll receieve an email shortly to join our ranks.</p>
     <h3>On with the survey!</h3>
 
     <!-- Basic information -->
-    <form method="get"></form>
+    <form method="get" action="results.html">
     <label for="namebox">What should we call you?</label>
     <br>
     <input type="text" placeholder="Enter name" name="namebox">
     <br>
     <br>
+
+    <label for="age">How old are you?</label>
+    <br>
+    <select>
+        <option>Enter your age...</option>
+        <option>Under 18 [Minor]</option>
+        <option>Over 18 [Legal Adult]</option>
+    </select>
+    <br>
+    <br>
+
+
      <!-- Means of Contact -->
     <label for="email">What's your email?</label>
     <br>
@@ -32,9 +46,7 @@
     <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="ex. 123-456-7890">
     <br>
     <br>
-    </form>
-
-    <form>
+ 
     <label>How should we contact you?</label>
     <br>
     <input type="checkbox" value="Yes to Email" name="emailcheck">
@@ -47,9 +59,9 @@
     <label for="callcheck">Call</label>
     <br>
     <br>
-</form>
 
-    <!-- Pastry preferences-->
+
+    <!-- More important information-->
     <label for="foodpref">Tell us your favorite French Food item!</label>
     <br>
     <label for="foodoption"></label>
@@ -65,14 +77,24 @@
     <br>
     <label for="reasoning">Why do you want to join the Baguette Cult?</label>
     <br>
-    <input type="textarea" rows="10" cols="10">
+    <textarea rows="10" cols="102"></textarea>
+    <br>
+    <br>
+    <label for="reasoning">What makes you worthy enough to join our esteemed organization?</label>
+    <br>
+    <textarea rows="10" cols="102"></textarea>
+    <br>
+    <label for="reasoning">Anything you want us to know that isn't on your application?</label>
+    <br>
+    <textarea rows="5" cols="102"></textarea>
     
-   
     <br>
     <br>
     <br>
-    <a href=results.html><input type="submit"></a>
-    
+    <input type="submit">
+    <br>
+</form>
     </div>
+
 </body>
 </html>
