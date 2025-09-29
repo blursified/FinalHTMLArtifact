@@ -9,13 +9,15 @@
 <body>
     <div>
     <h1>Welcome to the Baguette Cult!</h1>
-    <img src="french venti.webp" width="80%">
+    <img src="french venti.webp" width="80%" style="text-align: center">
     <p>An underground network of baguette lovers teaming up to take down our archenemies, the Croissant Network. We host events weekly to share our love for baguettes, network, and support each other :D</p>
     <p>Does this sound interesting to you? Great! </p>
     <h5>But first, we need to make sure you're not one of those <em>croissant lovers</em> in disguise...</h5>
     <p>If you're on board, fill out this short survey! If you qualify, you'll receieve an email shortly to join our ranks.</p>
     <h3>On with the survey!</h3>
-
+    </div>
+   
+    <div style="text-align: left">
     <!-- Basic information -->
     <form method="get" action="results.html">
     <label for="namebox">What should we call you?</label>
@@ -26,7 +28,7 @@
 
     <label for="age">How old are you?</label>
     <br>
-    <select>
+    <select name="age">
         <option>Enter your age...</option>
         <option>Under 18 [Minor]</option>
         <option>Over 18 [Legal Adult]</option>
@@ -43,7 +45,7 @@
     <br>
     <label for="tel">How about your phone number?</label>
     <br>
-    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="ex. 123-456-7890">
+    <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="ex. 123-456-7890">
     <br>
     <br>
  
@@ -62,7 +64,7 @@
 
 
     <!-- More important information-->
-    <label for="foodpref">Tell us your favorite French Food item!</label>
+    <label for="foodoption">Tell us your favorite French Food item!</label>
     <br>
     <label for="foodoption"></label>
     <input type="radio" value="baguette" name="foodoption"> Baguettes! They are <em>SUPREME.</em>
@@ -77,16 +79,16 @@
     <br>
     <label for="reasoning">Why do you want to join the Baguette Cult?</label>
     <br>
-    <textarea rows="10" cols="102"></textarea>
+    <textarea rows="10" cols="102" name="Sreasoning"></textarea>
     <br>
     <br>
-    <label for="reasoning">What makes you worthy enough to join our esteemed organization?</label>
+    <label for="sellingpoint">What makes you worthy enough to join our esteemed organization?</label>
     <br>
-    <textarea rows="10" cols="102"></textarea>
+    <textarea rows="10" cols="102" name="sellingpoint"></textarea>
     <br>
-    <label for="reasoning">Anything you want us to know that isn't on your application?</label>
+    <label for="additionalinfo">Anything you want us to know that isn't on your application?</label>
     <br>
-    <textarea rows="5" cols="102"></textarea>
+    <textarea rows="5" cols="102" name="additionalinfo"></textarea>
     
     <br>
     <br>
@@ -94,7 +96,7 @@
     <input type="submit">
     <br>
 </form>
-    </div>
+</div>
 
 </body>
 </html>
