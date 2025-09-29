@@ -3,24 +3,32 @@ body {
     font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     margin-bottom: 10%; 
     margin-right: 10%; 
-    background-color: white; 
+    background-color: #decea2; 
 }
 
 p {
     text-align: center; 
+    color: #5a3f02; 
 }
 
-h1 {
+h1, h3, h5 {
     text-align: center; 
+    color: #5a3f02; 
 }
 
-h3 
-{
+
+input, select, textarea {
+    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    background-color: #f8f1e2;
+}
+
+select {
+    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+
+
+div {
     text-align: center; 
-}
-
-h5
-{
-    
 }
 
